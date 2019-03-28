@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>word count : {{ count }}</p>
+{#<p>total word : {{ totalword }}</p>#}
+{% for word, wordcount in totalword %}
+    <p>{{ word }} -- {{ wordcount }}</p>
+{% endfor %}
+
+<br>
+<a href="{% url 'home' %}"> Start Again</a>
+</body>
+</html>
